@@ -188,7 +188,7 @@ Como continuación del análisis, se propone:
 
 1. Clonar o descargar este repositorio.
 2. Abrir el archivo `.ipynb`.
-3. Acceder a [Google Colab](https://colab.research.google.com/).
+3. Acceder a [Google Colab]([https://colab.research.google.com/](https://colab.research.google.com/drive/1y_y-_zgzNRYoYnxzNWwlyLhPO0ICXIk7#scrollTo=aa28f402)).
 4. Seleccionar **Archivo → Subir notebook**.
 5. Cargar el notebook del proyecto.
 6. Subir los datasets a la sesión de Colab o ajustar las rutas de los archivos.
@@ -206,13 +206,13 @@ pip install pandas numpy matplotlib jupyter
 3. Clonar el repositorio:
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone <https://github.com/srlokygood/Analysis-mobile-plan/tree/>
 ```
 
 4. Acceder a la carpeta del proyecto:
 
 ```bash
-cd <NOMBRE_DEL_PROYECTO>
+cd <S7 Version-Estudiante-Project-ConnectaTel.ipynb>
 ```
 
 5. Ejecutar Jupyter Notebook:
