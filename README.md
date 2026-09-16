@@ -246,22 +246,6 @@ Para reproducir el análisis completo:
 
 ---
 
-## 📌 Estructura sugerida del repositorio
-
-```text
-├── data/
-│   ├── users.csv
-│   └── usage.csv
-│
-├── notebooks/
-│   └── analisis_clientes.ipynb
-│
-├── README.md
-└── requirements.txt
-```
-
----
-
 ## 👤 Autor
 
 **Jair — Data Analyst en formación**
