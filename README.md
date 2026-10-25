@@ -17,6 +17,8 @@ How can a telecom company turn raw customer data into insights about customer be
 
 ## Data
 
+- **Source:** Telecomm customer data [MISSING: origin of the dataset, e.g. bootcamp project, public dataset].
+- **Records and period:** [MISSING: number of users, usage records, and date range].
 - **Tables used:**
   - `users`: `user_id`, `age`, `city`, `plan`, `reg_date`, `churn_date`
   - `usage`: `id`, `user_id`, `type` (call/text), `duration`, `length`, `date`
@@ -51,4 +53,43 @@ How can a telecom company turn raw customer data into insights about customer be
 
 ![Data model](images/data-model.png) <!-- [MISSING: diagram of table relationships] -->
 
-- **Key code:** [MISSING: 1–2 snippets, e.g. the `groupby` aggregation
+- **Key code:** [MISSING: 1–2 snippets, e.g. the `groupby` aggregation and the segmentation logic]
+
+## Findings
+
+1. Most customers are between 30 and 60 years old, making adults the largest age segment [MISSING: exact % or count].
+2. Medium usage is the predominant segment, followed by low usage; high-usage customers are a smaller share [MISSING: % for each].
+3. Total text message length shows high outliers reaching about 2,000 characters, and the message count is right-skewed (most customers send few messages) [MISSING: share of customers affected].
+4. Call count is roughly bell-shaped, and call duration is right-skewed, with most calls being short.
+
+## Recommendations
+
+- Analyze which plans each age group uses and at which usage levels, to adjust plan design.
+- Compare usage against plan allowances to detect overage charges and poor plan fit.
+- Track monthly usage trends to spot changes in customer activity.
+- Explore message length (characters) as a complement to message frequency.
+- Address data quality at the source (sentinel values, `?` entries, mismatched `type`/`duration`/`length`) before further modeling.
+
+## Limitations
+
+- The analysis is exploratory and descriptive: it does not explain why usage differs or predict churn.
+- Replacing `-999` ages with the mean may distort the age distribution.
+- Usage segments are based on simple thresholds, not on plan allowances.
+- Plan information and `churn_date` were not analyzed, so no conclusions about plan suitability, revenue or churn can be drawn.
+- Outliers were kept without confirming whether they are genuine.
+
+## How to Open It
+
+- **Google Colab:** open the `.ipynb` notebook in [Google Colab](https://colab.research.google.com/) (File → Upload notebook), upload the datasets or update the file paths, and run the cells in order.
+- **Local Jupyter:**
+  ```bash
+  git clone https://github.com/srlokygood/Analysis-mobile-plan.git
+  cd Analysis-mobile-plan
+  pip install -r requirements.txt   # [MISSING: add requirements.txt, or use: pip install pandas numpy matplotlib jupyter]
+  jupyter notebook
+  ```
+  Then open the `.ipynb` file and run the cells in order.
+
+## Tools
+
+Python, pandas, NumPy, Matplotlib, Jupyter Notebook, Google Colab
