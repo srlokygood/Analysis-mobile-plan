@@ -7,7 +7,7 @@
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black)
 
-Exploratory analysis of Telecomm's customer demographics, call/text records and subscription plans to understand usage behavior and segment customers. Adults aged 30–60 are the largest age group [MISSING: % of customers], and most customers fall into the medium-usage segment (5–10 messages or calls) [MISSING: % of customers].
+Exploratory analysis of Telecomm's customer demographics, call/text records and subscription plans to understand usage behavior and segment customers. Adults aged 30–60 are the largest age group, and most customers fall into the medium-usage segment (5–10 messages or calls).
 
 ![Main chart](images/main-chart.png) <!-- [MISSING: add a key chart, e.g. age distribution or usage segments] -->
 
